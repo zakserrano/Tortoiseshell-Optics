@@ -1,0 +1,297 @@
+html, body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+.strip{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 960px;
+}
+.box{
+  display: flex;
+}
+
+/* HEADER */
+
+#h{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+}
+
+    /* h_content_1 */
+
+        /* menu */
+
+#menu{
+  justify-content: space-between;
+  background-color: cadetblue;
+  height: 3rem;
+  margin-top: 1rem;
+  color: white;
+}
+#brand{
+  flex-direction: row;
+  align-items: center;
+}
+#brand img{
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+#brand p{
+  margin-left: 1rem;
+}
+#nav #screen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#nav #screen li{
+  margin-right: 2rem;
+}
+#nav #phone{
+  display: none;
+}
+#nav a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+    /* h_content_2 */
+
+#h_content_2{
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1032px;
+  margin-top: 10rem;
+}
+#h_content_2 p{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+/* MAIN */
+
+    /* phases */
+
+#phases{
+  margin-top: 3rem;
+}
+.phase_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 5rem;
+  margin-right: 6rem;
+}
+.phase_box img{
+  width: 100%;
+}
+.phase_box p{
+  text-align: center;
+}
+#pb1 img{
+  width: 3.5rem;
+}
+#pb3{
+  margin-right: 0rem;
+}
+
+    /* info */
+
+#info{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.info_box{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+#ib1{
+  margin-right: 5%;
+  font: white;
+}
+#box_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  margin-bottom: 1rem;
+}
+#info p{
+  width: 100%;
+}
+
+/* FOOTER */
+
+#f_content{
+  background-color: azure;
+  flex-direction: row;
+  align-items: center;
+  height: 9.5rem;
+}
+#f_content img{
+  height: 1.5rem;
+  margin-left: 4rem;
+}
+#f_content p{
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 960px){
+  #h{
+    height: 22rem;
+  }
+  #menu{
+    margin-top: 0rem;
+  }
+  #h_content_2{
+    margin-top: 5rem;
+  }
+  #h_content_2 p{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+  /* HEADER */
+
+  #h{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  /* menu */
+
+  #brand p{
+    display: none;
+  }
+  #nav #screen{
+    display: none;
+  }
+  #nav #phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  /* banner */
+
+  #h_content_2{
+    align-items: center;
+    margin-top: 9rem;
+    width: 100%;
+  }
+  #h_content_2 p{
+    font-size: 1rem;
+    min-width: 100%;
+    text-align: center;
+    margin-right: 0rem;
+
+  }
+
+  /* MAIN */
+
+  /* phases */
+
+  #phases{
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem auto;
+  }
+  .phase_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.54rem;
+    margin-right: 0rem;
+  }
+  .phase_box img{
+    margin-bottom: 1rem;
+    width: 5rem;
+  }
+  .phase_box p{
+    font-size: 0.77rem;
+  }
+  #pb3{
+    margin-bottom: 0rem;
+    width: 3rem;
+  }
+
+  /* info */
+
+  #info{
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+  .info_box{
+    width: 100%;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+  #ib1{
+    margin-right: 0%;
+  }
+  #box_title{
+    justify-content: center;
+    min-width: 100%;
+  }
+  #info p{
+    font-size: 0.77rem;
+    text-align: justify;
+    width: 90%;
+  }
+
+  /* FOOTER */
+
+  #f_content{
+    justify-content: center;
+  }
+  #f_content img{
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  #f_content p{
+    display: none;
+  }
+}
